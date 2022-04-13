@@ -12,7 +12,7 @@ def get_max_sub_array(arr):
         # The array needs to contain at least one element.
         raise ValueError("Array must not be empty")
 
-    current_max, current_start, current_end = 0, 0, 0
+    current_max, current_start, current_end = arr[0], 0, 0
     max_max, max_start, max_end = arr[0], 0, 0
 
     for i in range(len(arr)):
